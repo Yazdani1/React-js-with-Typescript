@@ -19,12 +19,14 @@ const ShowData = () => {
         console.log(err);
       });
   };
-  useEffect(() => {
-    loadData();
-  }, []);
+  // useEffect(() => {
+  //   loadData();
+  // }, []);
 
   return (
     <div>
+      <button onClick={loadData}>Load Data</button>
+
       {posts.map((item: any) => (
         <div key={item.id}>
           <h4>{item.title}</h4>
