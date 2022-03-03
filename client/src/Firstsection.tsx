@@ -24,7 +24,7 @@ const Firstsection: FC<Userinfo> = ({
         <h3>Age is: {age}</h3>
         <h3>Result: {isMore}</h3>
         <h1>Counter result is: {count}</h1>
-        <button onClick={counterButton}>Click</button>
+        <button onClick={counterButton}>Increase Count</button>
       </div>
     </React.Fragment>
   );

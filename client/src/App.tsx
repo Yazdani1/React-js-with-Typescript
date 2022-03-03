@@ -5,7 +5,11 @@ import Firstsection from "./Firstsection";
 const App = () => {
   const age = 24;
 
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
+
+  const increaseCount = () => {
+    setCount(count + 10);
+  };
 
   return (
     <React.Fragment>
@@ -15,7 +19,7 @@ const App = () => {
           age={age}
           count={count}
           isMore={age > 20}
-          counterButton={() => setCount(count + 5)}
+          counterButton={increaseCount}
         />
       </div>
     </React.Fragment>
