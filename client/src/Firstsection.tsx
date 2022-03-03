@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 
 interface Userinfo {
   name: String;
@@ -15,7 +15,6 @@ const Firstsection: FC<Userinfo> = ({
   counterButton,
   count,
 }) => {
-  console.log(isMore);
 
   return (
     <React.Fragment>
@@ -25,6 +24,7 @@ const Firstsection: FC<Userinfo> = ({
         <h3>Result: {isMore}</h3>
         <h1>Counter result is: {count}</h1>
         <button onClick={counterButton}>Increase Count</button>
+       
       </div>
     </React.Fragment>
   );
