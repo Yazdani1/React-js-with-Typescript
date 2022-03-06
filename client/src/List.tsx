@@ -1,9 +1,11 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from "react";
 
 const List = () => {
-  return (
-    <div>List</div>
-  )
-}
+  const [showdata, setShowdata] = useState([]);
 
-export default List
+  const loadData = () => {};
+
+  return <div>List</div>;
+};
+
+export default List;
