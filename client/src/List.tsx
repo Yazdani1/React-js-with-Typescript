@@ -9,11 +9,19 @@ const List = () => {
     fetch(API_ENDPOINT, {
       method: "GET",
     })
-      .then((result) => {})
+      .then((result: any) => {
+        if (result) {
+          setShowdata(result);
+        }
+      })
       .catch((err) => {
         console.log(err);
       });
   };
+
+  useEffect(() => {
+    loadData();
+  }, []);
 
   return <div>List</div>;
 };
