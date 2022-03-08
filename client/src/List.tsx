@@ -1,5 +1,5 @@
 import React, { useState, useEffect, FC } from "react";
-
+import ListData from "./ListData";
 
 const List = () => {
   const [showdata, setShowdata] = useState([]);
@@ -10,6 +10,7 @@ const List = () => {
     fetch(API_ENDPOINT, {
       method: "GET",
     })
+      .then((res) => res.json())
       .then((result: any) => {
         if (result) {
           setShowdata(result);
@@ -26,9 +27,9 @@ const List = () => {
 
   return (
     <React.Fragment>
-      {showdata.map((item: any) => (
-        <div key={item.id}>
-          <h1>{item.title}</h1>
+      {showdata?.map((item: any) => (
+        <div>
+          <ListData key={item.id} title={item.title} body={item.body} />
         </div>
       ))}
     </React.Fragment>

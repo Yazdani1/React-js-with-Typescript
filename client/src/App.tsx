@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Firstsection from "./Firstsection";
 import ShowData from "./ShowData";
+import List from "./List";
 
 const App = () => {
   const age = 24;
@@ -23,6 +24,7 @@ const App = () => {
           counterButton={increaseCount}
         />
         <ShowData />
+        <List />
       </div>
     </React.Fragment>
   );
