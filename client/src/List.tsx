@@ -25,9 +25,10 @@ const List = () => {
 
   return (
     <React.Fragment>
-      {showdata.map(item=>(
-        <>
-        </>
+      {showdata.map((item: any) => (
+        <div key={item.id}>
+          <h1>{item.title}</h1>
+        </div>
       ))}
     </React.Fragment>
   );
