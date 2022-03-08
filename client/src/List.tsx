@@ -27,7 +27,7 @@ const List = () => {
 
   return (
     <React.Fragment>
-      {showdata?.map((item: any) => (
+      {showdata.map((item: any) => (
         <div>
           <ListData key={item.id} title={item.title} body={item.body} />
         </div>
