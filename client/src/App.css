@@ -1,7 +1,11 @@
-.first-sections{
+.first-sections {
   align-items: center;
   text-align: center;
   justify-content: center;
   width: 100%;
   padding: 30px;
+}
+.list-data {
+  background-color: blueviolet;
+  color: aliceblue;
 }
