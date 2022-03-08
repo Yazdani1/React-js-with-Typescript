@@ -23,7 +23,14 @@ const List = () => {
     loadData();
   }, []);
 
-  return <div>List</div>;
+  return (
+    <React.Fragment>
+      {showdata.map(item=>(
+        <>
+        </>
+      ))}
+    </React.Fragment>
+  );
 };
 
 export default List;
