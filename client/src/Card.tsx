@@ -1,9 +1,16 @@
 import React,{useEffect,useState} from 'react'
 
 const Card = () => {
+
+    const[price,setPrice] = useState(0);
     
+
   return (
-    <div>Card</div>
+    <React.Fragment>
+        <div>
+            <p>Card View</p>
+        </div>
+    </React.Fragment>
   )
 }
 
