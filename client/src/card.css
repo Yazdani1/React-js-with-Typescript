@@ -4,3 +4,6 @@
   background-color: blueviolet;
   font-size: 25px;
 }
+.list{
+  display: flex;
+}

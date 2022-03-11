@@ -17,6 +17,11 @@ const Card = () => {
         <p>Card View</p>
         <p onClick={() => setPrice(price + 5)}>{price}</p>
       </div>
+
+      <div className="list">
+        <div><h6>Title</h6></div>
+        <div><p>Price</p></div>
+      </div>
     </React.Fragment>
   );
 };
