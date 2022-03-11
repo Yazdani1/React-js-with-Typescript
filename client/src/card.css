@@ -4,11 +4,17 @@
   background-color: blueviolet;
   font-size: 25px;
 }
-.list{
+.list {
   display: flex;
 }
-.list-title{
+.list-title {
   background-color: blueviolet;
   color: white;
   height: 100px;
+}
+.price-design {
+  height: 150px;
+  color: white;
+  background-color: brown;
+  font-size: large;
 }
