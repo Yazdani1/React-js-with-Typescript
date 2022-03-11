@@ -19,8 +19,12 @@ const Card = () => {
       </div>
 
       <div className="list">
-        <div><h6>Title</h6></div>
-        <div><p>Price</p></div>
+        <div className="list-title">
+          <h6>Title</h6>
+        </div>
+        <div className="price-design">
+          <p>Price</p>
+        </div>
       </div>
     </React.Fragment>
   );
