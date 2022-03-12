@@ -4,10 +4,10 @@ import "./card.css";
 
 const Card = () => {
   const [price, setPrice] = useState(0);
-  const [data,setData] = useState([]);
-  const [loading,setLoading] = useState([]);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const URL = "";
+  const URL = "https://jsonplaceholder.typicode.com/comments";
 
   const increasePrice = () => {
     setPrice(price + 1);
@@ -16,21 +16,25 @@ const Card = () => {
     setPrice(price - 1);
   };
 
-  const loadData =()=>{
-    fetch(URL,{
-      method:"GET"
-    }).then(res=>res.json)
-    .then(result=>{
+  const loadData = () => {
+    fetch(URL, {
+      method: "GET",
+    })
+      .then((res) => res.json)
+      .then((result: any) => {
+        if (result) {
+          setData(result);
+          setLoading(false);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
 
-    }).catch(err=>{
-      console.log(err);
-    });
-
-  }
-
-  useEffect(()=>{
+  useEffect(() => {
     loadData();
-  },[]);
+  }, []);
 
   return (
     <React.Fragment>
