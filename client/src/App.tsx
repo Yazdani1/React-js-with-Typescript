@@ -3,6 +3,7 @@ import "./App.css";
 import Firstsection from "./Firstsection";
 import ShowData from "./ShowData";
 import List from "./List";
+import Card from "./Card";
 
 const App = () => {
   const age = 24;
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <Card />
       <div className="first-sections">
         <Firstsection
           name="Yazdani"

@@ -1,11 +1,12 @@
 .card-design {
-  height: 350px;
+  height: 50px;
   width: 100%;
   background-color: blueviolet;
   font-size: 25px;
 }
 .list {
   display: flex;
+  justify-content: space-evenly;
 }
 .list-title {
   background-color: blueviolet;
@@ -22,7 +23,7 @@
 
 /* to rated  */
 
-#container_2 {
+.container_2 svg {
   border: 1px solid;
   padding: .5em;
   width: 5em;
@@ -30,8 +31,8 @@
   transition: .3s all;  /* rotate gradually instead of instantly */
 }
 
-#container_2:hover {
-  -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
-  -ms-transform: rotate(90deg);      /* to support IE 9 */
-  transform: rotate(90deg);
+.container_2 svg:hover {
+  -webkit-transform: rotate(-180deg);  /* to support Safari and Android browser */
+  -ms-transform: rotate(140deg);      /* to support IE 9 */
+  transform: rotate(-180deg);
 }

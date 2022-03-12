@@ -52,9 +52,9 @@ const Card = () => {
           <p>Price </p>
         </div>
         <div className="container_2">
-          <span>
+       
             <BsArrowDownCircleFill size={50}/>
-          </span>
+       
         </div>
       </div>
     </React.Fragment>
