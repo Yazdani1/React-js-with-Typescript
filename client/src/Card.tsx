@@ -1,6 +1,7 @@
 import { url } from "inspector";
 import React, { useEffect, useState } from "react";
 import "./card.css";
+import { BsArrowDownCircleFill } from "react-icons/bs";
 
 const Card = () => {
   const [price, setPrice] = useState(0);
@@ -48,7 +49,12 @@ const Card = () => {
           <h6>Title</h6>
         </div>
         <div className="price-design">
-          <p>Price</p>
+          <p>Price </p>
+        </div>
+        <div className="container_2">
+          <span>
+            <BsArrowDownCircleFill size={50}/>
+          </span>
         </div>
       </div>
     </React.Fragment>

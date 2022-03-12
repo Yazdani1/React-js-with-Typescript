@@ -18,3 +18,20 @@
   background-color: brown;
   font-size: large;
 }
+
+
+/* to rated  */
+
+#container_2 {
+  border: 1px solid;
+  padding: .5em;
+  width: 5em;
+  height: 5em;
+  transition: .3s all;  /* rotate gradually instead of instantly */
+}
+
+#container_2:hover {
+  -webkit-transform: rotate(90deg);  /* to support Safari and Android browser */
+  -ms-transform: rotate(90deg);      /* to support IE 9 */
+  transform: rotate(90deg);
+}
