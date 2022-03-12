@@ -3,6 +3,8 @@ import "./card.css";
 
 const Card = () => {
   const [price, setPrice] = useState(0);
+  const [data,setData] = useState([]);
+  const [loading,setLoading] = useState([]);
 
   const increasePrice = () => {
     setPrice(price + 1);
