@@ -1,3 +1,4 @@
+import { url } from "inspector";
 import React, { useEffect, useState } from "react";
 import "./card.css";
 
@@ -6,12 +7,30 @@ const Card = () => {
   const [data,setData] = useState([]);
   const [loading,setLoading] = useState([]);
 
+  const URL = "";
+
   const increasePrice = () => {
     setPrice(price + 1);
   };
   const decresePrice = () => {
     setPrice(price - 1);
   };
+
+  const loadData =()=>{
+    fetch(URL,{
+      method:"GET"
+    }).then(res=>res.json)
+    .then(result=>{
+
+    }).catch(err=>{
+      console.log(err);
+    });
+
+  }
+
+  useEffect(()=>{
+    loadData();
+  },[]);
 
   return (
     <React.Fragment>
