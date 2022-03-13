@@ -4,6 +4,7 @@ import Firstsection from "./Firstsection";
 import ShowData from "./ShowData";
 import List from "./List";
 import Card from "./Card";
+import Food from "./Food/Food";
 
 const App = () => {
   const age = 24;
@@ -17,6 +18,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Card />
+      <Food name="Pizza" img="iamgelocation" address="Germany" price={50}/>
       <div className="first-sections">
         <Firstsection
           name="Yazdani"
