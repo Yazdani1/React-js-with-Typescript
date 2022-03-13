@@ -45,16 +45,8 @@ const Card = () => {
       </div>
 
       <div className="list">
-        <div className="list-title">
-          <h6>Title</h6>
-        </div>
-        <div className="price-design">
-          <p>Price </p>
-        </div>
         <div className="container_2">
-       
-            <BsArrowDownCircleFill size={50}/>
-       
+          <BsArrowDownCircleFill size={50} />
         </div>
       </div>
     </React.Fragment>
