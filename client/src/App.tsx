@@ -30,6 +30,20 @@ const App = () => {
           isMore={age > 20}
           counterButton={increaseCount}
         />
+          <Firstsection
+          name="Yazdani"
+          age={age}
+          count={count}
+          isMore={age > 20}
+          counterButton={increaseCount}
+        />
+          <Firstsection
+          name="Yazdani"
+          age={age}
+          count={count}
+          isMore={age > 20}
+          counterButton={increaseCount}
+        />
         <ShowData />
         <List />
       </div>
