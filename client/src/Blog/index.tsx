@@ -1,6 +1,7 @@
 import React from 'react'
+import { Blogdata } from './types'
 
-const Blog = () => {
+const Blog:React.FC<Blogdata> = () => {
   return (
     <div>Blog</div>
   )
