@@ -18,24 +18,11 @@ const App = () => {
   return (
     <React.Fragment>
       <Card />
-      <Food name="Pizza" img="iamgelocation" address="Germany" price={50}/>
+      <Food name="Pizza" img="iamgelocation" address="Germany" price={50} />
 
       <div className="first-sections">
+     
         <Firstsection
-          name="Yazdani"
-          age={age}
-          count={count}
-          isMore={age > 20}
-          counterButton={increaseCount}
-        />
-          <Firstsection
-          name="Yazdani"
-          age={age}
-          count={count}
-          isMore={age > 20}
-          counterButton={increaseCount}
-        />
-          <Firstsection
           name="Yazdani"
           age={age}
           count={count}
