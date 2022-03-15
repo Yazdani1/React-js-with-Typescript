@@ -19,8 +19,6 @@ const App = () => {
     <React.Fragment>
       <Card />
       <Food name="Pizza" img="iamgelocation" address="Germany" price={50}/>
-      <Food name="Burger" img="burgerimagelocation" address="Bonn" price={500}/>
-      <Food name="Burger" img="burgerimagelocation" address="Bonn" price={500}/>
 
       <div className="first-sections">
         <Firstsection
