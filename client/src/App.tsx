@@ -5,6 +5,7 @@ import ShowData from "./ShowData";
 import List from "./List";
 import Card from "./Card";
 import Food from "./Food/Food";
+import Blog from "./Blog/index";
 
 const App = () => {
   const age = 24;
@@ -31,6 +32,7 @@ const App = () => {
         />
         <ShowData />
         <List />
+        <Blog/>
       </div>
     </React.Fragment>
   );
