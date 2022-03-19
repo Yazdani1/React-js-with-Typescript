@@ -22,7 +22,6 @@ const App = () => {
       <Food name="Pizza" img="iamgelocation" address="Germany" price={50} />
 
       <div className="first-sections">
-     
         <Firstsection
           name="Yazdani"
           age={age}
@@ -32,7 +31,7 @@ const App = () => {
         />
         <ShowData />
         <List />
-        <Blog/>
+        <Blog title="First post" des="This is the first post"  />
       </div>
     </React.Fragment>
   );
