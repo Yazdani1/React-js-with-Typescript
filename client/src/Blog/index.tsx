@@ -1,4 +1,5 @@
 import React from "react";
+import "./blog.css";
 import { Blogdata } from "./types";
 
 const Blog: React.FC<Blogdata> = ({ title, des, date, category, location }) => {
