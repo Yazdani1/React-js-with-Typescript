@@ -12,6 +12,10 @@ const Blog: React.FC<Blogdata> = ({ title, des, date, category, location }) => {
         <p>{category}</p>
         <p>{location}</p>
       </div>
+      <div className="action-blog">
+        <button>Edit</button>
+        <button>Delete</button>
+      </div>
     </React.Fragment>
   );
 };
