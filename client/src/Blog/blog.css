@@ -17,5 +17,6 @@ h3{
     display: flex;
     background-color: brown;
     color: aliceblue;
-    
+    padding: 10px;
+    border-radius: 90px;
 }
