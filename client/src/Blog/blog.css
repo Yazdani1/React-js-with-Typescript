@@ -13,3 +13,9 @@ h3{
     color: aqua;
     letter-spacing: normal;
 }
+.action-blog{
+    display: flex;
+    background-color: brown;
+    color: aliceblue;
+    
+}
