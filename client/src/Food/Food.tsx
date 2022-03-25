@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { Foodlist } from "./types";
+import "./food.css";
 
 const Food = ({ name, price, img, address }: Foodlist) => {
   return (
