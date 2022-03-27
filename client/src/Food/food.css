@@ -1,6 +1,14 @@
-.food-container{
-    height: 250px;
-    width: 100%;
-    background-color: orange;
-    color: aliceblue;
+.food-container {
+  height: 250px;
+  width: 100%;
+  background-color: orange;
+  color: aliceblue;
+}
+.action {
+  display: flex;
+  margin: 10px;
+  background-color: blueviolet;
+  color: aqua;
+  border-radius: 20px;
+  padding: 10px;
 }
