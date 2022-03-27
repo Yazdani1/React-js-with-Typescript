@@ -13,6 +13,10 @@ const Food = ({ name, price, img, address }: Foodlist) => {
 
         <h1>{address}</h1>
       </div>
+      <div className="action">
+        <button>Edit</button>
+        <button>Delete</button>
+      </div>
     </React.Fragment>
   );
 };
